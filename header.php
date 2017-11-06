@@ -12,7 +12,7 @@
 <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(array( "html", "wide-template" )); ?>>
 
 
 <a class="usa-skipnav" href="#primary">
