@@ -20,10 +20,10 @@ function benjamin_scripts() {
         'benjamin', get_stylesheet_directory_uri() . '/assets/js/uswds-min.js',
          null, null, true
     );
-    wp_enqueue_style( 'benjamin',
+    wp_enqueue_style( 'benjamin-epa',
          get_stylesheet_directory_uri() . '/assets/css/epa_style.min.css' );
 	
-    wp_enqueue_style( 'benjamin',
+    wp_enqueue_style( 'benjamin-main',
          get_stylesheet_directory_uri() . '/assets/css/benjamin'.$benjamin_color_scheme.'.min.css' );
 		
      // comment script
