@@ -7,33 +7,7 @@ $sticky = get_theme_mod('navbar_sticky_setting', 'no') == 'yes' ? 'sticky' : '';
 
        REMOVED
 
-        <nav role="navigation" class="usa-nav">
-            <button class="usa-nav-close"></button>
 
-            <?php
-                $args =  array(
-                    'theme_location' => 'primary',
-                    'container' => '',
-                    'menu_class'     => 'usa-nav-primary usa-accordion',
-                    'walker' => new BenjaminNavbarWalker(),
-                    'fallback_cb' => 'benjamin_set_default_menu'
-                );
-
-             wp_nav_menu( $args );
-            ?>
-
-            <?php if(get_theme_mod('navbar_search_setting', 'none') == 'navbar' ): ?>
-            <form class="usa-search usa-search-small">
-                <div role="search">
-                    <label class="usa-sr-only" for="search-field-small">Search small</label>
-                    <input id="search-field-small" type="search" name="search">
-                    <button type="submit">
-                        <span class="usa-sr-only">Search</span>
-                    </button>
-                </div>
-            </form>
-            <?php endif;?>
-        </nav>
     </div>
 
 </header>
