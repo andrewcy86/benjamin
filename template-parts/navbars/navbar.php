@@ -5,10 +5,7 @@ $sticky = get_theme_mod('navbar_sticky_setting', 'no') == 'yes' ? 'sticky' : '';
     <?php echo esc_attr(benjamin_navbar_header_class()) . ' ' . esc_attr($sticky) ; ?>" role="banner">
     <div class="usa-nav-container">
 
-        <div class="usa-navbar">
-            <button class="usa-menu-btn">Menu</button>
-            <?php benjamin_navbar_brand(); ?>
-        </div>
+       REMOVED
 
         <nav role="navigation" class="usa-nav">
             <button class="usa-nav-close"></button>
