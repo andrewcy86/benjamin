@@ -45,3 +45,22 @@ $sticky = get_theme_mod('navbar_sticky_setting', 'no') == 'yes' ? 'sticky' : '';
 			</ul>
 		</div>
 	</div>
+<section class="main-content clearfix" id="main-content" lang="en" role="main" tabindex="-1">
+		<div class="region-preface clearfix">
+			<div class="block-views-revision-hublinks-block" id="block-views-revision-hublinks-block">
+				<div class="view view-revision-hublinks view-id-revision_hublinks">
+					<span class="related-info"><strong>Related Topics:</strong></span>
+					<ul class="menu pipeline">
+						<li class="menu-item"><a href="/environmental-topics">Environmental Topics</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="block block-pane block-pane-epa-web-area-connect" id="block-pane-epa-web-area-connect">
+				<ul class="menu utility-menu">
+					<li class="menu-item"><a class="menu-link" href="{CONTACT URL}">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+    <div class="main-column clearfix">
+      
+<main id="main-content" role="main">
