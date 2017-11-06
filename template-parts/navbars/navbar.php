@@ -51,7 +51,7 @@ $sticky = get_theme_mod('navbar_sticky_setting', 'no') == 'yes' ? 'sticky' : '';
 				<div class="view view-revision-hublinks view-id-revision_hublinks">
 					<span class="related-info"><strong>Related Topics:</strong></span>
 					<ul class="menu pipeline">
-						<li class="menu-item"><a href="/environmental-topics">Environmental Topics</a></li>
+						<li class="menu-item"><a href="<?php echo home_url(); ?>">Home</a>Developer Central</a></li>
 					</ul>
 				</div>
 			</div>
