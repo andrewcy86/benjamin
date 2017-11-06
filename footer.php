@@ -12,11 +12,15 @@
 ?>
 
 </main><!-- #main-content -->
-<footer class="usa-footer usa-footer-medium" role="contentinfo">
+<div class="usa-footer usa-footer-medium" role="contentinfo">
     <?php
         // inc/frontend/footer.php
         benjamin_footer();
     ?>
+</div>
+
+<footer>
+    REMOVED
 </footer>
 <?php wp_footer(); ?>
 
