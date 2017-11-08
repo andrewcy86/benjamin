@@ -8,6 +8,21 @@ deviations to standard pages
 */
 
 get_header();
+  
+/**
+ * get all the settings needed for the the template layout
+ *
+ * returns:
+ * $template
+ * $main_width
+ * $hide_content
+ * $sidebar_position
+ *
+ */
+extract( benjamin_template_settings() );
+
+if( !$hide_content ):
+?>
 <link rel="stylesheet" type="text/css" href="/wp-content/themes/benjamin/swagger/swagger-ui.css" >
 <style>
     html
@@ -28,47 +43,7 @@ get_header();
       background: #fafafa;
     }
   </style>
-  
-/**
- * get all the settings needed for the the template layout
- *
- * returns:
- * $template
- * $main_width
- * $hide_content
- * $sidebar_position
- *
- */
-extract( benjamin_template_settings() );
-
-if( !$hide_content ):
-?>
-
 <section id="primary" class="usa-grid usa-section">
-
-    <?php
-    if($sidebar_position == 'left'):
-        benjamin_get_sidebar($template, $sidebar_position);
-    endif;
-    ?>
-    <div class="main-content <?php echo esc_attr($main_width); ?>">
-        <section id="primary" class="usa-grid usa-section">
-
-    <?php
-    if($sidebar_position == 'left'):
-        benjamin_get_sidebar($template, $sidebar_position);
-    endif;
-    ?>
-    <div class="main-content <?php echo esc_attr($main_width); ?>">
-    	<?php
-    	while ( have_posts() ) : the_post();
-
-    		get_template_part( 'template-parts/content', 'page' );
-
-
-    	endwhile; // End of the loop.
-    	?>
-    </div>
             
     	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
   <defs>
@@ -114,9 +89,6 @@ if( !$hide_content ):
 
 </section>
 
-<?php
-endif;
-
 <script src="/wp-content/themes/benjamin/swagger/swagger-ui-bundle.js"> </script>
 <script src="/wp-content/themes/benjamin/swagger/swagger-ui-standalone-preset.js"> </script>
 <script>
@@ -140,4 +112,8 @@ window.onload = function() {
   window.ui = ui
 }
 </script>
+
+<?php
+endif;
+
 get_footer();
