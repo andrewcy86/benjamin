@@ -46,7 +46,7 @@ if( !$hide_content ):
   .swagger-ui .topbar .download-url-wrapper .download-url-button {
     margin: 0px;
 }
-  #swagger-ui table tbody {
+  #swagger-ui table tbody tr td {
     padding: 5px 10px 5px 5px;
 }
   #swagger-ui table thead th {
