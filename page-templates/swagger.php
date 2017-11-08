@@ -39,10 +39,8 @@ if( !$hide_content ):
     }
 
     .page {
-      margin-left: 0px;
-      margin-right: 0px;
-      margin-top: 0px;
-      margin-bottom: 0px;
+      margin: 0px;
+      padding: 0px;
     }
   </style>
 <section id="primary" class="usa-grid usa-section">
