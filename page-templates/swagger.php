@@ -47,11 +47,7 @@ if( !$hide_content ):
     margin: 0px;
 }
   
- .swagger-ui table tbody tr td {
-    padding: 5px 10px 5px 5px;
-}
-
- .swagger-ui table thead th {
+.swagger-ui table thead tr td, .swagger-ui table thead tr th {
     padding: 5px 10px 5px 5px;
 }
   
