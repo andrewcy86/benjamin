@@ -81,11 +81,6 @@ if( !$hide_content ):
 
 <div id="swagger-ui"></div>
     </div>
-    <?php
-    if($sidebar_position == 'right'):
-        benjamin_get_sidebar($template, $sidebar_position);
-    endif;
-    ?>
 
 </section>
 
