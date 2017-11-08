@@ -42,6 +42,10 @@ if( !$hide_content ):
       margin: 0px;
       padding: 0px;
     }
+  
+  .swagger-ui .topbar .download-url-wrapper .download-url-button {
+    margin: 0px;
+}
   </style>
 <section id="primary" class="usa-grid usa-section">
             
