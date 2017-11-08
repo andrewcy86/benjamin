@@ -47,8 +47,6 @@ if( !$hide_content ):
     margin: 0px;
 }
   </style>
-<section id="primary" class="usa-grid usa-section">
-            
     	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position:absolute;width:0;height:0">
   <defs>
     <symbol viewBox="0 0 20 20" id="unlocked">
@@ -84,9 +82,6 @@ if( !$hide_content ):
 </svg>
 
 <div id="swagger-ui"></div>
-    </div>
-
-</section>
 
 <script src="/wp-content/themes/benjamin/swagger/swagger-ui-bundle.js"> </script>
 <script src="/wp-content/themes/benjamin/swagger/swagger-ui-standalone-preset.js"> </script>
