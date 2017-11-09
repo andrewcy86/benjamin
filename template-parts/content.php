@@ -20,7 +20,7 @@ $cat_id = $cat_id_array[0]->cat_ID;
 	
 	<?php 
 $edgID = get_post_meta($post->ID, 'EDG_ID', true);
-if ($edgID && $cat_id == 2) {
+if ($edgID && $cat_id == 2 && !is_single()) {
  $curl = curl_init();
       curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
       curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
