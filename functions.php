@@ -29,10 +29,10 @@ define('BENJAMIN_ONE_HALF' , 'usa-width-one-half');
 require_once get_template_directory() . '/inc/_inc.php';
 
 function remove_my_post_metaboxes() {
-remove_meta_box( 'categorydiv', 'mgmlp_media_folder', 'normal' );
-remove_meta_box( 'postimagediv', 'mgmlp_media_folder', 'normal' );
-remove_meta_box( 'slugdiv', 'mgmlp_media_folder', 'normal' );
-remove_meta_box( 'wppcp-post-file-attachments-general', 'mgmlp_media_folder', 'normal' );
-remove_meta_box( 'wppcp-post-file-attachments', 'mgmlp_media_folder', 'normal' );
+remove_meta_box( 'categorydiv', 'folder', 'side' );
+remove_meta_box( 'postimagediv', 'folder', 'side' );
+remove_meta_box( 'slugdiv', 'folder', 'normal' );
+remove_meta_box( 'wppcp-post-file-attachments-general', 'folder', 'normal' );
+remove_meta_box( 'wppcp-post-file-attachments', 'folder', 'normal' );
 }
 add_action('admin_menu','remove_my_post_metaboxes');
