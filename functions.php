@@ -27,12 +27,3 @@ define('BENJAMIN_THREE_FOURTHS' , 'usa-width-three-fourths');
 define('BENJAMIN_ONE_HALF' , 'usa-width-one-half');
 
 require_once get_template_directory() . '/inc/_inc.php';
-
-function remove_my_post_metaboxes() {
-remove_meta_box( 'categorydiv', 'post', 'side' );
-remove_meta_box( 'postimagediv', 'post', 'side' );
-remove_meta_box( 'slugdiv', 'post', 'normal' );
-remove_meta_box( 'wppcp-post-file-attachments-general', 'post', 'normal' );
-remove_meta_box( 'wppcp-post-file-attachments', 'post', 'normal' );
-}
-add_action('admin_menu','remove_my_post_metaboxes');
