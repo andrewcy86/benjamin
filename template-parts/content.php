@@ -46,7 +46,7 @@ foreach($json->dataset as $item) {
     		<?php if ( 'page' !== get_post_type() ) : ?>
     		<div class="entry-meta">
     			<?php benjamin_posted_on(); ?>
-    		</div><br /><br /><!-- .entry-meta -->
+    		</div><!-- .entry-meta -->
     		<?php
     		endif; 
 		?>
