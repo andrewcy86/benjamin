@@ -35,21 +35,14 @@ if ($json === null
 } else { 
 ?>
 <?php
-$i=0;
-foreach($json->dataset as $item) {
-	     if($i!=0)  
-          break;
-    echo '<header class="entry-header"><h2 class="entry-title">' . $item->title . '</h2></header>';
-	$i++;
-}
+//$i=0;
+//foreach($json->dataset as $item) {
+//	     if($i!=0)  
+//        break;
+//    echo '<header class="entry-header"><h2 class="entry-title">' . $item->title . '</h2></header>';
+//	$i++;
+//}
 ?>
-    		<?php if ( 'page' !== get_post_type() ) : ?>
-    		<div class="entry-meta">
-    			<?php benjamin_posted_on(); ?>
-    		</div><!-- .entry-meta -->
-    		<?php
-    		endif; 
-		?>
 	
 <?php echo Custom_Ratings_Public::vote(); ?>
 	
