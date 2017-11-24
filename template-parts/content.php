@@ -43,7 +43,13 @@ foreach($json->dataset as $item) {
 	$i++;
 }
 ?>
-
+    		<?php if ( 'page' !== get_post_type() ) : ?>
+    		<div class="entry-meta">
+    			<?php benjamin_posted_on(); ?>
+    		</div><!-- .entry-meta -->
+    		<?php
+    		endif; 
+		?>
 <?php 
 echo '<div class="entry-content">';
 $i_link=0;
