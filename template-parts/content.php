@@ -46,10 +46,13 @@ foreach($json->dataset as $item) {
     		<?php if ( 'page' !== get_post_type() ) : ?>
     		<div class="entry-meta">
     			<?php benjamin_posted_on(); ?>
-    		</div><!-- .entry-meta -->
+    		</div><br /><br /><!-- .entry-meta -->
     		<?php
     		endif; 
 		?>
+	
+<?php echo Custom_Ratings_Public::vote(); ?>
+	
 <?php 
 echo '<div class="entry-content">';
 $i_link=0;
