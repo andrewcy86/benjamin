@@ -2,7 +2,7 @@
 /**
  * Template Name: LEW Calculator
  */
-require '/wp-content/themes/benjamin/lew/lew-process.php';
+require __DIR__ . '/lew-process.php';
 $startDate = getPageVar('startDate');
 $endDate = getPageVar('endDate');
 $setAddress = getPageVar('setAddress');
