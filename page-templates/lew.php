@@ -175,6 +175,6 @@ $setAddress = getPageVar('setAddress');
     var faciLng4 = <?php echo safeJsOutput(number_format($faciLng,4)); ?>;
     var setAddress = <?php echo safeJsOutput($setAddress); ?>;
 </script>
-<script src="/lew-calculator/wp-content/themes/illdy/lew-scripts.js"></script>
+<script src="/lew-calculator/wp-content/themes/benjamin/page-templates/lew-scripts.js"></script>
 </body>
 </html>
