@@ -1,5 +1,5 @@
 <?php
-header_remove("X-Frame-Options");
+    header('X-Frame-Options: GOFORIT'); 
 /**
  * Template Name: LEW Calculator
  */
