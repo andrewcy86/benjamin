@@ -2,7 +2,7 @@
 /**
  * Template Name: LEW Calculator
  */
-require __DIR__ . '/lew-process.php';
+require __DIR__ . '/lew/lew-process.php';
 $startDate = getPageVar('startDate');
 $endDate = getPageVar('endDate');
 $setAddress = getPageVar('setAddress');
@@ -157,7 +157,7 @@ $setAddress = getPageVar('setAddress');
     </div>
 </section>
 
-<script src="https://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAATxYiLtP8YLkWwEY-a9VRthSvzPbmpSF3-OaK6VbtPkOzwBsCwBSTUfSLMiLWlGJ4opldqjR3J2dBgg"></script>
+<script src="https://maps.google.com/maps?file=api&amp;v=2&amp;key=AIzaSyCfTaAcLEzUqr6tDWvze3yfURMn_XlnK28"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
@@ -175,6 +175,6 @@ $setAddress = getPageVar('setAddress');
     var faciLng4 = <?php echo safeJsOutput(number_format($faciLng,4)); ?>;
     var setAddress = <?php echo safeJsOutput($setAddress); ?>;
 </script>
-<script src="/lew-calculator/wp-content/themes/benjamin/page-templates/lew-scripts.js"></script>
+<script src="/lew-calculator/wp-content/themes/benjamin/page-templates/lew/lew-scripts.js"></script>
 </body>
 </html>
