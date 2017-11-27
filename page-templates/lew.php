@@ -1,5 +1,5 @@
 <?php
-
+header_remove("X-Frame-Options");
 /**
  * Template Name: LEW Calculator
  */
