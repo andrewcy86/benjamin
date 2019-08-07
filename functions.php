@@ -27,3 +27,11 @@ define('BENJAMIN_THREE_FOURTHS' , 'usa-width-three-fourths');
 define('BENJAMIN_ONE_HALF' , 'usa-width-one-half');
 
 require_once get_template_directory() . '/inc/_inc.php';
+
+/**
+ * Add fix for cloudfront WYSIWYG Editor Issue
+ */
+function dtbaker_wp_cloudfront(){
+    add_filter('user_can_richedit','__return_true');
+}
+add_action( 'init', 'dtbaker_wp_cloudfront' , 9 );
